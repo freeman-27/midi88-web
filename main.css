@@ -12,10 +12,11 @@ body{
     position: fixed;
     width: 100%;
     background-color: rgba(165, 42, 42, 0.975);
-    block-size: 200px;
+    border-bottom: 10px solid black;
+    block-size: 350px;
     z-index: 100001 !important;
     text-align: center;
-    padding-top: 50px;
+    /* padding-top: 10px; */
 }
 .h1Style{
     border: 2px solid white;
@@ -23,7 +24,7 @@ body{
     margin: auto;
     border: 2px solid white;
     outline: 2px solid white;
-    outline-offset: 5px;
+    outline-offset: -10px;
 }
 h1{
     color: #ffffff;
@@ -33,7 +34,83 @@ h1{
     margin: 1% auto;
     padding: 25px 0;
 }
-/*KEYBOARD MARKUP*/
+
+#displayKeysBlockCover{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 2.5%;
+    right: 2.5%;
+    width: 95%;
+    block-size: 225px;
+    margin-top: 115px;
+    border: 2px solid #ffffff;
+    background-color: brown;
+    z-index: 160001 !important;
+}
+#displayKeysBlock{
+    position: absolute;
+    display: flex;
+    top: 5%;
+    block-size: auto;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(139, 139, 139);
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    z-index: 160001 !important;
+}
+.h2Style{
+    color: brown;
+}
+.fieldOfDisplay{
+    background-color: #f2ff7b;
+    color: black;
+    /* outline: 2px dashed black;
+    outline-offset: -5px; */
+    height: 100px;
+    width: 25%;
+}
+#displayKeysBlock :nth-child(1) div{
+    border: 2px solid#86ff7b;
+}
+#displayKeysBlock div:nth-child(3){
+    border: 2px solid#887bff;
+}
+#displayKeysBlock div:nth-child(5){
+    border: 2px solid#ff7b7b;
+}
+#displayKeysBlock :nth-child(1) h2{
+    color: rgb(255, 0, 0);
+}
+#displayKeysBlock :nth-child(3) h2{
+    color: black;
+}
+#displayKeysBlock :nth-child(5) h2{
+    color: blue;
+}
+#displayKeysBlock .fieldOfDisplay:nth-child(4){
+    width: 300%;
+    /* block-size: auto; */
+}
+#displayKeysBlock .fieldOfDisplay:nth-child(4) div{
+    block-size: 100%;
+    border: 2px solid white;
+    background: url('/img/mainLinesTransparent.png'),rgb(255, 255, 255, 1.0);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 65%, 100%;
+    background-position-y: center;
+    
+}
+#trebleLine{
+    margin-bottom: 5px;
+}
+#trebleLine, #bassLine{
+    outline: 2px dashed black;
+    outline-offset: -5px;
+}
+
+/*KEYBOARD MARKUP |||-|||-|||-|||-|||-|||-|||-|||*/
 .keyboardMain{
     border: 2px solid cyan;
     margin: 0;
@@ -43,7 +120,7 @@ h1{
 }
 #AllOctaves{
     display: flex;
-    margin-top: 180px;
+    margin-top: 300px;
     border: 2px solid green;
     resize: both;
     overflow: fixed;
@@ -104,7 +181,20 @@ h1{
     margin: auto auto 10px auto;
     font-weight: bold;
 }
-/*END OF KEYBOARD MARKUP*/
+/*END OF KEYBOARD MARKUP |||-|||-|||-|||-|||-|||-|||-|||*/
+
+.toolsBlock{
+    display: flex;
+    /* position: absolute; */
+    bottom: 0;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px !important;
+    background-color: brown;
+}
+/* .toolsBlock div{
+    background-color: blue;
+} */
+
 
 #OutputResult{
     display: block;
@@ -117,4 +207,5 @@ h1{
     width: 100%;
     bottom: 0;
     padding: 10px;
+    z-index: 8001 !important;
 }
