@@ -10,10 +10,27 @@ body{
     display: block;
     position: fixed;
     width: 100%;
-    background-color: rgba(165, 42, 42, 1.0);
+    background-color: rgba(165, 42, 42, 0.975);
     block-size: 200px;
-    /* margin-bottom: -25px; */
     z-index: 100001 !important;
+    text-align: center;
+    padding-top: 50px;
+}
+.h1Style{
+    border: 2px solid white;
+    width: 50%;
+    margin: auto;
+    border: 2px solid white;
+    outline: 2px solid white;
+    outline-offset: 5px;
+}
+h1{
+    color: #ffffff;
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    width: 98%;
+    margin: 1% auto;
+    padding: 25px 0;
 }
 .keyboardMain{
     border: 2px solid cyan;
@@ -24,7 +41,7 @@ body{
 }
 #AllOctaves{
     display: flex;
-    margin-top: 150px;
+    margin-top: 180px;
     border: 2px solid green;
     resize: both;
     overflow: fixed;
