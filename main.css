@@ -1,8 +1,9 @@
 body{
     margin: 0;
+    padding: 0;
 }
 #mainContainer{
-    display: block;
+    display: flex;
     border: 2px solid red;
     width: auto;
 }
@@ -32,6 +33,7 @@ h1{
     margin: 1% auto;
     padding: 25px 0;
 }
+/*KEYBOARD MARKUP*/
 .keyboardMain{
     border: 2px solid cyan;
     margin: 0;
@@ -80,6 +82,39 @@ h1{
     background-color: blue;
     transition-duration: 0.5s;
 }
+
+.textOnButtons{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    background-color: rgba(137, 43, 226, 0.25);
+    text-align: center;
+    justify-content: center;
+    margin: 0% 40% 20% 40%;
+    width: 20%;
+    padding: 0;
+    
+}
 .spanKeyNumber{
+    margin: 100px auto auto auto;
+    color: red;
+    z-index: 110001 !important;
+}
+.spanNoteName{
     margin: auto auto 10px auto;
+    font-weight: bold;
+}
+/*END OF KEYBOARD MARKUP*/
+
+#OutputResult{
+    display: block;
+    position: absolute;
+    background-color: black;
+    color: #ffffff;
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -5px;
+    block-size: 100px;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
 }
