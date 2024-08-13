@@ -154,7 +154,21 @@ h1{
     text-align: center;
     
 }
-.buttonBlack:hover, .buttonWhiteLeft:hover, .buttonWhiteMid:hover, .buttonWhiteRight:hover{
+.buttonBlack:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+    outline: 2px solid black;
+    outline-offset: -2px;
+    transition-duration: 0.5s;
+}
+.buttonWhiteLeft:hover, .buttonWhiteMid:hover, .buttonWhiteRight:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+    outline: 2px solid blue;
+    outline-offset: -2px;
+    transition-duration: 0.5s;
+}
+.buttonBlack:active, .buttonWhiteLeft:active, .buttonWhiteMid:active, .buttonWhiteRight:active{
     cursor: pointer;
     background-color: blue;
     transition-duration: 0.5s;
@@ -194,7 +208,6 @@ h1{
 /* .toolsBlock div{
     background-color: blue;
 } */
-
 
 #OutputResult{
     display: block;
